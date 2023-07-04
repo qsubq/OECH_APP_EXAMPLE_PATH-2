@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OECH_APP_NEW" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#0560FA</item>
+    </style>
+
+    <style name="Base.Theme.OECH_APP_NEW.Launch">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+    </style>
+</resources>

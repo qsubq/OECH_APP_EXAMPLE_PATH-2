@@ -1,0 +1,14 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OECH_APP_NEW" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#0560FA</item>
+    </style>
+
+    <style name="Theme.OECH_APP_NEW" parent="Base.Theme.OECH_APP_NEW" />
+
+    <style name="Base.Theme.OECH_APP_NEW.Launch">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+    </style>
+</resources>
