@@ -46,6 +46,8 @@ class RemoteRepositoryImpl : RemoteRepository {
 
     override suspend fun otpVerification(em: String, code: String) {
         Log.e("Maksim", "OtpVerification")
+
+
         client.gotrue.verifyEmailOtp(type = OtpType.Email.MAGIC_LINK, email = em, token = code)
     }
 

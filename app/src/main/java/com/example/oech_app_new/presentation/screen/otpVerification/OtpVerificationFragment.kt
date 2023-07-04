@@ -68,6 +68,8 @@ class OtpVerificationFragment : Fragment() {
         viewModel.resendOtpLiveData.observe(viewLifecycleOwner) {
             binding.progressBar.visibility = View.GONE
 
+
+
             Toast.makeText(requireContext(), "Успешно отправлено", Toast.LENGTH_SHORT).show()
         }
 

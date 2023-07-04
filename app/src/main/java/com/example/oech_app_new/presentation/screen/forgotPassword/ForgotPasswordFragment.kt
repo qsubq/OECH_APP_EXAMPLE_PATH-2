@@ -37,7 +37,7 @@ class ForgotPasswordFragment : Fragment() {
 
         viewModel.networkLiveData.observe(viewLifecycleOwner) {
             binding.progressBar.visibility = View.GONE
-            DialogError("Out of connection", "Check your network").show(
+            DialogError("Out of connections", "Check your network").show(
                 requireActivity().supportFragmentManager,
                 "DialogError",
             )
