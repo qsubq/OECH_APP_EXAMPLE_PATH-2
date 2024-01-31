@@ -15,8 +15,8 @@ import io.github.jan.supabase.postgrest.query.Columns
 
 class RemoteRepositoryImpl : RemoteRepository {
     val client = createSupabaseClient(
-        supabaseUrl = "https://idpdrbamhlvemznetkfy.supabase.co",
-        supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlkcGRyYmFtaGx2ZW16bmV0a2Z5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODgzMjM0OTcsImV4cCI6MjAwMzg5OTQ5N30.xz6C7srJJOouCRTLjd5tDr0sVyZs4U36OQju4wLGuf0",
+        supabaseUrl = "https://sjwqypmvzzrtenugzbdg.supabase.co",
+        supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNqd3F5cG12enpydGVudWd6YmRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTg2NTIxODcsImV4cCI6MjAxNDIyODE4N30.hJZdlKYwUANLibX2Uyf9dN11QRmC2hC1PHrQ5GzqREM",
     ) {
         install(GoTrue)
         install(Postgrest)
@@ -46,7 +46,6 @@ class RemoteRepositoryImpl : RemoteRepository {
 
     override suspend fun otpVerification(em: String, code: String) {
         Log.e("Maksim", "OtpVerification")
-
 
         client.gotrue.verifyEmailOtp(type = OtpType.Email.MAGIC_LINK, email = em, token = code)
     }

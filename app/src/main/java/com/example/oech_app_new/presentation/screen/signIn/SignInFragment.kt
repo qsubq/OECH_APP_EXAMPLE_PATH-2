@@ -76,9 +76,6 @@ class SignInFragment : Fragment() {
                     .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
                     .build()
 
-
-
-
                 val secureSharedPref = EncryptedSharedPreferences(
                     requireContext(),
                     "fileNam",
